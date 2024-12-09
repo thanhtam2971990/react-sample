@@ -6,6 +6,5 @@ function* log(action: PayloadAction) {
 }
 
 export default function* counterSage() {
-   console.log("Counter Saga")
    yield takeEvery('*', log)
 }
